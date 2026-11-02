@@ -440,10 +440,11 @@ document.getElementById("mapshow").addEventListener("click",()=>{
 const t=document.createElement("script");t.type="application/ld+json";t.textContent=JSON.stringify(d);document.head.appendChild(t)})();
 /* ===== OWNER DOCUMENTS: edit file names + captions here (names are case-sensitive on GitHub) ===== */
 const DOCS=[
-["images/doc1.jpg","Certified Document 1"],
-["images/doc2.jpg","Certified Document 2"],
-["images/doc3.jpg","Certified Document 3"],
-["images/doc4.jpg","Certified Document 4"]
+["images/cert_iso.jpg","ISO Certificate"],
+["images/cert.jpg","Certificate"]
+/* ID cards are NOT shown on purpose. To show them, remove the comment markers below, but blur the ID numbers first.
+["images/front_id.jpg","ID Card (front)"]
+,["images/back_id.jpg","ID Card (back)"] */
 ];
 const dg=document.getElementById("docgrid"),lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbc=document.getElementById("lbc");let cur=0;
 DOCS.forEach((d,i)=>{
